@@ -8,7 +8,7 @@ on:
       - main
 
 env:
-  IMAGE_NAME: ${{ github.event.repository.name }}
+  IMAGE_NAME: trojansourcedetector
   VERSION: '1.0.1'
 
 jobs:
