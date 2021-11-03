@@ -2,7 +2,7 @@
 
 Docker image build for [trojansourcedetector](https://github.com/haveyoudebuggedit/trojansourcedetector), with examples for Gitlab CI.
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/avisi-cloud/trojansourcedetector/release)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/avisi-cloud/trojansourcedetector-ci/release)
 
 ## Table of Contents
 
@@ -49,7 +49,7 @@ This image is build at least once a month automatically.
 
 ## Contribute
 
-PRs accepted. All issues should be reported in the [Github issue tracker](https://github.com/avisi-cloud/trojansourcedetector/issues).
+PRs accepted. All issues should be reported in the [Github issue tracker](https://github.com/avisi-cloud/trojansourcedetector-ci/issues).
 
 ## License
 
