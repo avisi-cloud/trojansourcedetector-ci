@@ -10,8 +10,6 @@ RUN git clone https://github.com/avisi-cloud/trojansourcedetector.git trojansour
     && go test -v ./... \
     && go build -o trojansourcedetector cmd/trojansourcedetector/main.go
 
-RUN ls -la
-
 # Resulting image
 FROM alpine:3.14.2
 
