@@ -1,0 +1,19 @@
+{
+  "directory": ".",
+  "exclude": [".git/*", ".git/*/*", ".git/*/*/*"],
+  "parallelism": 10,
+  "detect_bidi": true,
+  "extensions": [
+    ".c",
+    ".csx",
+    ".cpp",
+    ".go",
+    ".h",
+    ".java",
+    ".js",
+    ".kt",
+    ".py",
+    ".rs",
+    ".ts"
+  ]
+}

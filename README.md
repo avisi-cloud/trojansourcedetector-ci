@@ -26,6 +26,30 @@ Usage of /usr/local/bin/trojansourcedetector:
         JSON file containing the configuration. (default ".trojansourcedetector.json")
 ```
 
+By default, we use the following config.json file:
+
+```json
+{
+  "directory": ".",
+  "exclude": [".git/*", ".git/*/*", ".git/*/*/*"],
+  "parallelism": 10,
+  "detect_bidi": true,
+  "extensions": [
+    ".c",
+    ".csx",
+    ".cpp",
+    ".go",
+    ".h",
+    ".java",
+    ".js",
+    ".kt",
+    ".py",
+    ".rs",
+    ".ts"
+  ]
+}
+```
+
 ### Examples
 
 #### Gitlab CI
@@ -34,7 +58,7 @@ Usage of /usr/local/bin/trojansourcedetector:
 trojansource-detector:
    image: ghcr.io/avisi-cloud/trojansourcedetector:1.0.1
    script:
-     - trojansourcedetector
+     - trojansourcedetector -config=/home/trojansourcedetector/config.json
 ```
 
 #### Docker run
