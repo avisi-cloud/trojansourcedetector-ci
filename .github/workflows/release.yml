@@ -36,7 +36,7 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           tags: |
-            ghcr.io/containerinfra/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
+            ghcr.io/avisi-cloud/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
           build-args: |
             TROJAN_SOURCE_DETECTOR_VERSION=${{ env.VERSION }}
             TROJAN_SOURCE_DETECTOR_SHA256=${{ env.SHA256 }}
@@ -49,5 +49,5 @@ jobs:
 
       - name: Check images
         run: |
-          docker buildx imagetools inspect ghcr.io/containerinfra/${IMAGE_NAME}:${{ env.VERSION }}
-          docker pull ghcr.io/containerinfra/${IMAGE_NAME}:${{ env.VERSION }}
+          docker buildx imagetools inspect ghcr.io/avisi-cloud/${IMAGE_NAME}:${{ env.VERSION }}
+          docker pull ghcr.io/avisi-cloud/${IMAGE_NAME}:${{ env.VERSION }}
