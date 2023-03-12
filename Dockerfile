@@ -11,7 +11,7 @@ RUN git clone https://github.com/avisi-cloud/trojansourcedetector.git trojansour
     && go build -o trojansourcedetector cmd/trojansourcedetector/main.go
 
 # Resulting image
-FROM alpine:3.14.2
+FROM alpine:3.17.2
 
 ARG USER=trojansourcedetector
 RUN adduser -D $USER
